@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>WebView Example</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <button onclick="callAndroidMethod()">Call Android Method</button>
+
+    <script type="text/javascript">
+        function callAndroidMethod() {
+            var result = AndroidInterface.test(); // "AndroidInterface" is the name you gave in the Android code
+            alert("Result from Android: " + result); // Show the result, which should be "test!"
+        }
+    </script>
 </body>
 </html>
