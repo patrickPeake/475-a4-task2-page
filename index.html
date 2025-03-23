@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebView Example</title>
     <style>
-        button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -20,13 +14,6 @@
     </script>
 </head>
 <body>
-    <button onclick="callAndroidMethod()">Call Android Method</button>
-
-    <script type="text/javascript">
-        function callAndroidMethod() {
-            var result = AndroidInterface.test(); // "AndroidInterface" is the name you gave in the Android code
-            alert("Result from Android: " + result); // Show the result, which should be "test!"
-        }
-    </script>
+    Hello World
 </body>
 </html>
