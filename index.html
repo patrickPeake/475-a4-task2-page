@@ -12,6 +12,12 @@
             transform: translate(-50%, -50%);
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var result = AndroidInterface.test(); // Call the Android method
+            alert("Result from Android: " + result); // Show the result
+        });
+    </script>
 </head>
 <body>
     <button onclick="callAndroidMethod()">Call Android Method</button>
