@@ -9,11 +9,12 @@
     
 </head>
 <body>
-    Hello World
+    <div id="myDiv">Original content</div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var result = Android.getdate("TAG");
             alert("Result from Android: " + result);
+            document.getElementById("myDiv").innerHTML = myVariable;
         });
     </script>
 </body>
